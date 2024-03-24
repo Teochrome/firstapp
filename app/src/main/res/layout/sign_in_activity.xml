@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Sign_In">
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/video_calling3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="347dp"
+        android:orientation="vertical"
+        app:flow_verticalGap="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textColor="#1565C0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/text_frame"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/email_in"/>
+
+        <TextView
+            android:textColor="#1565C0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/text_frame"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/pass_in"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="490dp"
+        android:background="@drawable/google"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/google_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:layout_width="126dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/sign_in_frame"
+            android:text="Sign in"
+            android:textSize="22sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="126dp"
+            android:layout_height="55dp"
+            android:background="@drawable/sign_in_frame"
+            android:text="Sign up"
+            android:textSize="22sp"
+            tools:ignore="MissingConstraints"
+            android:onClick="openSign_Up"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
